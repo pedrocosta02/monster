@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Big Giant</title>
+</head>
+<body onload="pisca();">
+    <main class="_main">
+      <section class="ss_">
+        <div class="pikachuBox">
+          <div class="pikachuHead">
+            
+          </div>
+          <!-- <div class="pikachuHead"><div class="eye"></div></div>
+          <div id="shadow" class="raysShadow pikachuBody"></div> -->
+        </div>
+      </section>
+    </main>
+    <script>
+      function pisca() {
+        var f = document.getElementById('shadow');
+        setInterval(function() {
+          f.style.visibility = (f.style.visibility == 'hidden' ? '' : 'hidden');
+        }, 700);
+      }
+    </script>
+</body>
+</html>
